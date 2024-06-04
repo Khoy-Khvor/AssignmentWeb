@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technology</title>
+    <link
+      rel="icon"
+      href="https://www.shutterstock.com/image-vector/laptop-circle-swoosh-icon-logo-260nw-336320570.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="https://www.shutterstock.com/image-vector/laptop-circle-swoosh-icon-logo-260nw-336320570.jpg"
+          alt="Logo"
+        />
+      </div>
+      <div class="search-box">
+        <input
+          id="search"
+          type="text"
+          placeholder="Search . . ."
+          autocomplete="off"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-result">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav bar -->
+    <div class="navbar-container">
+      <div class="container-navbar">
+        <i id="open-namu-bar" style="cursor: pointer; font-size: 1.5em;" class="fa-solid fa-bars-staggered"></i>
+        <div class="nav-container">
+          <div style="display: flex; justify-content: end; padding: 8px;" class="btn-back-manu-container">
+            <i id="btn-back-manu" style="font-size: 1.5em; cursor: pointer;" class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="navbar">
+            <a
+              style="background-color: rgba(0, 0, 0, 0.2)"
+              href="/"
+              id="all-display"
+              class="nav-manu"
+            >
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+            <a href="/laptop.html" id="laptop-display" class="nav-manu">
+              <i class="fa-solid fa-laptop"></i>
+              <span>Laptop</span>
+            </a>
+            <a href="/desktop.html" id="desktop-display" class="nav-manu">
+              <i class="fa-solid fa-desktop"></i>
+              <span>Desktop</span>
+            </a>
+            <a href="/monitor.html" id="monitor-display" class="nav-manu">
+              <i class="fa-solid fa-display"></i>
+              <span>Monitor</span>
+            </a>
+            <a href="/accessory.html" id="accessory-display" class="nav-manu">
+              <i class="fa-solid fa-keyboard"></i>
+              <span>Accessory</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-bar">
+          <!-- <i id="seach-icon" class="fa-solid fa-magnifying-glass"></i>
+           
+           <div class="search-box">
+            <input
+              id="search"
+              type="text"
+              placeholder="Search . . ."
+              autocomplete="off"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-result">
+               <div class="result">
+                <p>Dell 31443124</p>
+              </div>
+            </div>
+          </div> -->
+          <a id="phone-number-manu" class="nav-manu">
+            <i class="fa-solid fa-phone"></i>
+            <span>061658845</span>
+          </a>
+          <div id="cart-btn">
+            <a class="nav-manu" href="/cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Cart</span>
+              <span class="number-cart">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <h1>Special Products</h1>
+      <div
+        style="display: grid"
+        id="products-monitor"
+        class="main-products"
+      ></div>
+      <hr />
+      <div
+        style="display: grid"
+        id="products-laptop"
+        class="main-products"
+      ></div>
+      <hr />
+      <div
+        style="display: grid"
+        id="products-desktop"
+        class="main-products"
+      ></div>
+      <hr />
+      <div
+        style="display: grid"
+        id="products-accessory"
+        class="main-products"
+      ></div>
+      <div
+      style="display: none"
+      id="search-results"
+      class="main-products"
+    ></div>
+    </div>
+    <div style="display: none" class="detail-container">
+      <div name="product-detail" class="detail-product-container"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="category">
+          <h1>Category</h1>
+          <a href="/index.html">Home</a>
+          <a href="/laptop.html">Laptop</a>
+          <a href="desktop.html">Desktop</a>
+          <a href="monitor.html">Monitor</a>
+          <a href="accessory.html">Accessory</a>
+        </div>
+        <div class="about-us">
+          <h1>About Us</h1>
+          <p>
+            Direct Import New and Used <br />
+            Laptop/ Desktop/ Tablet From USA.
+          </p>
+        </div>
+        <div class="contact">
+          <h1>Contact</h1>
+          <p>Address: Banteay Meanchey, CAMBODIAPH</p>
+          <p>Website: www.pcshop.com</p>
+        </div>
+        <div class="social-network">
+          <h1>Social Network</h1>
+          <!-- <div style="display: flex; flex-direction: row; justify-content: center; gap: 1em; font-size: 2.5em; " class="social">
+            <a style="color: white; background-color: blue; border-radius: 50%; width: 35px; height: 35px; display: flex; justify-content: center; align-items: center;" href="https://www.facebook.com/KhoyKhvor" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a style="color: white; background-color: rgb(46, 46, 216); border-radius: 50%; width: 35px; height: 35px; display: flex; justify-content: center; align-items: center;" href="https://t.me/khvor12345" target="_blank"> <i id="telegram" class="fa-brands fa-telegram">
+              
+            </i></a>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+    <div style="display: none" id="cart-table"></div>
+    <script src="getProducts.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+    <script src="search.js" type="module"></script>
+  </body>
+</html>
